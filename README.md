@@ -4,7 +4,7 @@ Python Flask CRUD web app with SQLite Databse and Google Sign-In
 
 ![Screenshot](HomePageVIewOne.png)
 
-##  Restaurant App Pages
+##  Pages Screenshot
 
 ### 1. Create new restaurant page
 
