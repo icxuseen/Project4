@@ -2,7 +2,7 @@
 
 Python Flask CRUD web app with SQLite Databse and Google Sign-In
 
-![Screenshot](HomePageVIewOne.png)
+![Screenshot](HomePageVIewOne.PNG)
 
 ##  Pages Screenshot
 
