@@ -22,7 +22,7 @@ Python Flask CRUD web with SQLite Databse and Google Sign-In
 
 ### 3. JSON View
 
-![Screenshot](JsonView.png)
+![Screenshot](JsonView.PNG)
 
 ## How to run
 
