@@ -22,19 +22,18 @@ This is Python Flask CRUD Restaurant Menu App web with SQLite Databse and Google
 
 **Step 1:** Open your terminal and then run these commands:
 
-```
-# Launch & Login to machine
-cd /vagrant
-vagrant up
-vagrant ssh
+# To Launch to machine
+- cd /vagrant
+- vagrant up
+- vagrant ssh
 
 # Open shared folder
-cd /vagrant/catalog 
+- cd /vagrant/catalog 
 
 # Run the program
-python database_setup.py
-python restaurantapp.py
-```
+- python database_setup.py
+- python restaurantapp.py
+
 
 ##  Pages Screenshot
 
