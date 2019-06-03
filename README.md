@@ -1,10 +1,40 @@
 # Project 4: Restaurant App
 
-Python Flask CRUD web with SQLite Databse and Google Sign-In
+This is Python Flask CRUD Restaurant Menu App web with SQLite Databse and Google Sign-In, and it is  fourth project of the [UDACITY Full Stack Web Developer Nanodegree]
 
 ![Screenshot](HomePageVIewOne.PNG)
 
 ![Screenshot](HomePageVIewFour.png)
+
+## Installation
+
+**Step 1:** Download and install Vagrant and VirtualBox
+
+**Step 2:** clone the project folder and open the terminal
+
+**Step 3:**  To Install & Configure VM type cd /vagrant then vagrant up
+
+**Step 4:** To log into machine type vagrant ssh
+
+**Step 4:** to Install & Configure VM
+
+## How to run
+
+**Step 1:** Open your terminal and then run these commands:
+
+```
+# Launch & Login to machine
+cd /vagrant
+vagrant up
+vagrant ssh
+
+# Open shared folder
+cd /vagrant/catalog 
+
+# Run the program
+python database_setup.py
+python restaurantapp.py
+```
 
 ##  Pages Screenshot
 
@@ -24,14 +54,3 @@ Python Flask CRUD web with SQLite Databse and Google Sign-In
 
 ![Screenshot](JsonView.PNG)
 
-## How to run
-
-**Step 1:** Download and install Vagrant and VirtualBox
-
-**Step 2:** Configure Virtual Machine
-
-**Step 3:** Launch the Vagrant VM (vagrant up)
-
-**Step 4:** cd /vagrant/catalog 
-
-**Step 5:** python restaurantapp.py 
