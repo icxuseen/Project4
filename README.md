@@ -199,9 +199,9 @@ sudo apt install apache2
 import sys
 import logging
 logging.basicConfig(stream=sys.stderr)
-sys.path.insert(0,"/var/www/RestaurantApp/")
+sys.path.insert(0,"/var/www/RestaurantApp/RestaurantApp")
 
-from RestaurantApp import app as application
+from restaurantapp import app as application
 application.secret_key = 'super_secret_key'
 ```
 	
