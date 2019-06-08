@@ -47,9 +47,9 @@ When it asks me to enter a passphrase, i entered 1433, but you can  leave it emp
 
 ### 5. Configure Timezone to Use UTC
 
-	```
-	# sudo dpkg-reconfigure tzdata
-	```
+```
+# sudo dpkg-reconfigure tzdata
+```
 
 ### 6. Create user grader
 - logged into the virtual server
@@ -116,7 +116,7 @@ When it asks me to enter a passphrase, i entered 1433, but you can  leave it emp
 ```
 sudo apt install apache2
 ```
-- Test URL http://52.26.30.44 
+- Then test URL http://52.26.30.44 
 
 ### 11. Cloning the project application
 
