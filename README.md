@@ -1,6 +1,6 @@
 # Project 4: Linux Server Configuration
 
-This is Python Flask CRUD Restaurant Menu App web runs live on Amazon Lightsail web server and Google Sign-In.
+This is Python Flask CRUD Restaurant Menu App web runs live on Amazon Lightsail web server, Google Sign-In and Godaddy DNS.
 
 ### SSH Information and Application URL
 
