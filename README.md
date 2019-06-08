@@ -2,6 +2,8 @@
 
 This is Python Flask CRUD Restaurant Menu App web runs live on Amazon Lightsail web server, Google Sign-In and Godaddy DNS.
 
+The RestaurantApp is a RESTful web application that displays Restaurants List and  Menu items, allowing the user to login and add, edit and delete.
+
 ### SSH Information and Application URL
 
 - Server IP Address: 52.57.174.115
@@ -231,4 +233,5 @@ sudo apt-get python3-psycopg2
 - https://help.ubuntu.com
 - https://www.postgresql.org/docs/current/static/sql-createuser.html</br>
 - http://flask.pocoo.org/docs/0.12/
+- https://www.ostechnix.com/how-to-change-apache-ftp-and-ssh-default-port-to-a-custom-port-part-1/
 
