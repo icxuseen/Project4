@@ -218,5 +218,5 @@ When it asks me to enter a passphrase, i entered 1433, but you can  leave it emp
 	sudo apt-get install  python3-sqlalchemy
 	sudo apt-get python3-psycopg2
 	```
-
+	
 
