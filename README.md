@@ -203,21 +203,21 @@ When it asks me to enter a passphrase, i entered 1433, but you can  leave it emp
 	
 - Restart Apache
 
-### 14. Install required modules 
+### 14. Install required modules and run restaurantapp.py
 
 
-	```
-	sudo apt-get install python-pip
-	sudo pip install virtualenv
-	sudo virtualenv venv
-	source venv/bin/activate
-	sudo pip install Flask
-	pip install httplib2
-	sudo apt-get install python3-oauth2client
-	sudo apt-get install python3-requests
-	sudo apt-get install python-requests
-	sudo apt-get install  python3-sqlalchemy
-	sudo apt-get python3-psycopg2
-	```
+```
+sudo apt-get install python-pip
+sudo pip install virtualenv
+sudo virtualenv venv
+source venv/bin/activate
+sudo pip install Flask
+pip install httplib2
+sudo apt-get install python3-oauth2client
+sudo apt-get install python3-requests
+sudo apt-get install python-requests
+sudo apt-get install  python3-sqlalchemy
+sudo apt-get python3-psycopg2
+```
 	
 
