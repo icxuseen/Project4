@@ -150,29 +150,31 @@ sudo apt install apache2
 - Add the following lines
 
    ```
-    <VirtualHost *:80>
-        ServerName 52.57.174.115
-        ServerAdmin icxusen@gmail.com
-        WSGIScriptAlias / /var/www/RestaurantApp/restaurantapp.wsgi
-        <Directory /var/www/RestaurantApp/RestaurantApp/>
-            Order allow,deny
-            Allow from all
-        </Directory>
-        Alias /static /var/www/RestaurantApp//RestaurantApp/static
-        <Directory /var/www/RestaurantApp/RestaurantApp/static/>
-            Order allow,deny
-            Allow from all
-        </Directory>
-        ErrorLog ${APACHE_LOG_DIR}/error.log
-        LogLevel warn
-        CustomLog ${APACHE_LOG_DIR}/access.log combined
-	</VirtualHost>
+        <VirtualHost *:80>
+			ServerName 52.57.174.115
+			ServerAlias www.somalishare.com
+			ServerAdmin icxusen@gmail.com
+			WSGIScriptAlias / /var/www/RestaurantApp/restaurantapp.wsgi
+			<Directory /var/www/RestaurantApp/RestaurantApp/>
+				Order allow,deny
+				Allow from all
+			</Directory>
+			Alias /static /var/www/RestaurantApp/RestaurantApp/static
+			<Directory /var/www/RestaurantApp/RestaurantApp/static/>
+				Order allow,deny
+				Allow from all
+			</Directory>
+			ErrorLog ${APACHE_LOG_DIR}/error.log
+			LogLevel warn
+			CustomLog ${APACHE_LOG_DIR}/access.log combined
+        </VirtualHost>
+
    ```
    
 - Enable the virtual host:
 
    ```
-   $ sudo a2ensite FlaskApp
+   $ sudo a2ensite RestaurantApp
    ```
 
 - Restart Apache server:
@@ -183,25 +185,29 @@ sudo apt install apache2
 
 ### 13. Create the .wsgi File
 
+   Move to the `/var/www/RestaurantApp/` directory and create a file named `restaurantapp.wsgi` with following commands:
+
+   ```
+   $ cd /var/www/RestaurantApp/
+   $ sudo nano restaurantapp.wsgi
+   ```
+
 ```
 #!/usr/bin/python3
 import sys
 import logging
 logging.basicConfig(stream=sys.stderr)
-sys.path.insert(0,"/var/www/RestaurantApp/RestaurantApp")
+sys.path.insert(0,"/var/www/RestaurantApp/")
 
 from RestaurantApp import app as application
 application.secret_key = 'super_secret_key'
 ```
-   
-- Add the following lines to the restaurantapp.wsgi file
-
-	```
-	cd /var/www/RestaurantApp
-	sudo nano restaurantapp.wsgi
-	```
 	
 - Restart Apache
+
+	```
+	sudo service apache2 restart
+	```
 
 ### 14. Install required modules and run restaurantapp.py
 
@@ -219,5 +225,10 @@ sudo apt-get install python-requests
 sudo apt-get install  python3-sqlalchemy
 sudo apt-get python3-psycopg2
 ```
-	
+
+### 15. Third-party resources 
+
+- https://help.ubuntu.com
+- https://www.postgresql.org/docs/current/static/sql-createuser.html</br>
+- http://flask.pocoo.org/docs/0.12/
 
