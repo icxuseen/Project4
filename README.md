@@ -113,9 +113,9 @@ When it asks me to enter a passphrase, i entered 1433, but you can  leave it emp
 
 ### 10. Installing Apache Web Server
 
-	```
-	sudo apt install apache2
-	```
+```
+sudo apt install apache2
+```
 - Test URL http://52.26.30.44 
 
 ### 11. Cloning the project application
@@ -183,16 +183,16 @@ When it asks me to enter a passphrase, i entered 1433, but you can  leave it emp
 
 ### 13. Create the .wsgi File
 
-	```
-	#!/usr/bin/python3
-	import sys
-	import logging
-	logging.basicConfig(stream=sys.stderr)
-	sys.path.insert(0,"/var/www/RestaurantApp/RestaurantApp")
+```
+#!/usr/bin/python3
+import sys
+import logging
+logging.basicConfig(stream=sys.stderr)
+sys.path.insert(0,"/var/www/RestaurantApp/RestaurantApp")
 
-	from RestaurantApp import app as application
-	application.secret_key = 'super_secret_key'
-	```
+from RestaurantApp import app as application
+application.secret_key = 'super_secret_key'
+```
    
 - Add the following lines to the restaurantapp.wsgi file
 
