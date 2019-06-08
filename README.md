@@ -81,16 +81,16 @@ When it asks me to enter a passphrase, i entered 1433, but you can  leave it emp
     ```
 ### 8. Setting Up the Firewall
 
-	```
-    sudo ufw allow 2200/tcp
-    sudo ufw allow www
-    sudo ufw allow 123/udp
-    sudo ufw deny 22
-    sudo ufw default deny incoming
-    sudo ufw default allow outgoing
-    sudo ufw enable
-    sudo ufw status
-    ```
+```
+sudo ufw allow 2200/tcp
+sudo ufw allow www
+sudo ufw allow 123/udp
+sudo ufw deny 22
+sudo ufw default deny incoming
+sudo ufw default allow outgoing
+sudo ufw enable
+sudo ufw status
+```
 ### 9. Install and configure PostgreSQL
 
 - `sudo apt-get install postgresql`
